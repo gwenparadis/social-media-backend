@@ -3,6 +3,12 @@ const userSchema = require("./User");
 const thoughtSchema = require("./Thought");
 const friendSchema = require("./Friend");
 
+const reactionSchema = new Schema({
+  reactionCount: {
+    type: number,
+  },
+});
+
 const Reaction = model("reaction", reactionSchema);
 
 module.exports = Reaction;
