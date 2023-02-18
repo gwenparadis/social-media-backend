@@ -1,4 +1,4 @@
-const { Friend, User } = require("../models");
+const { Friend } = require("../models");
 
 module.exports = {
   //get all Friends
@@ -8,7 +8,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
 
-  //TODO: add a
+  //TODO: add a friend
 
   //delete a friend
   deleteFriend(req, res) {

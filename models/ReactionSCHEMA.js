@@ -1,3 +1,5 @@
+//This is supposed to be schema only???
+
 const { Schema, model } = require("mongoose");
 const userSchema = require("./User");
 const thoughtSchema = require("./Thought");
