@@ -10,5 +10,5 @@ const router = require("express").Router();
 // DELETE to remove a thought by its id
 
 // /api/thoughts/:thoughtId/reactions
-// POST to create a reactiom stored in a single thought's reactions array field
+// POST to create a reaction stored in a single thought's reactions array field
 // DELETE to pull and remove a reaction by the reactions reactionId value
