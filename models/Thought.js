@@ -3,10 +3,6 @@ const reactionSchema = require("./Reaction");
 
 const thoughtSchema = new Schema(
   {
-    id: {
-      type: Number,
-      autoincrement: true,
-    },
     thoughtText: {
       type: String,
       required: true,
