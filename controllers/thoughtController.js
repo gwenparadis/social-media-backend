@@ -23,7 +23,7 @@ module.exports = {
     Thought.create(req.body)
       .then((thought) =>
         User.findOneAndUpdate(
-          { _id: req.body.userId },
+          { _id: req.body.user_id },
           { $push: { thoughts: thought.thought_id } },
           { runValidators: true, new: true }
         )
@@ -41,7 +41,7 @@ module.exports = {
   // Put to update a user
   updateThought(req, res) {
     Thought.findOneAndUpdate(
-      { _id: req.params.thought_id },
+      { _id: req.params.thoughtId },
       { $set: req.body },
       { runValidators: true, new: true }
     )
@@ -54,7 +54,7 @@ module.exports = {
   },
   // Delete a thought by id
   deleteThought(req, res) {
-    Thought.findOneAndDelete({ _id: req.params.thought_id })
+    Thought.findOneAndDelete({ _id: req.params.thoughtId })
       .then((thought) =>
         !thought
           ? res.status(404).json({ message: "No thought with that ID" })
