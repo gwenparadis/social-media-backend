@@ -14,7 +14,6 @@ const thoughtSchema = new Schema(
       max_length: 25,
     },
     reactions: [reactionSchema],
-    reactionCount: [reactionSchema.length],
   },
   { timestamps: true },
   {
