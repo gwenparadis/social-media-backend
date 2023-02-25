@@ -12,7 +12,7 @@ module.exports = {
     Thought.findOne({ _id: req.params.thoughtId })
       .select("-__v")
       .then((thought) =>
-        !user
+        !thought
           ? res.status(404).json({ message: "No thought with that ID" })
           : res.json(thought)
       )
@@ -23,14 +23,14 @@ module.exports = {
     Thought.create(req.body)
       .then((thought) =>
         User.findOneAndUpdate(
-          { _id: req.body.user_id },
+          { _id: req.body.userId },
           { $push: { thoughts: thought.thought_id } },
           { runValidators: true, new: true }
         )
       )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: "No thought with that ID" })
+          ? res.status(404).json({ message: "No user with that ID" })
           : res.json({ message: "Thought added!" })
       )
       .catch((err) => {
