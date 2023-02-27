@@ -8,7 +8,7 @@ I created this Social Network API in order to create an interactive database whe
 
 This webpage is a backend program, that has not been deployed publicly. The code can be access in the following Github repository: https://github.com/gwenparadis/social-network-API
 
-There is no visual for this application, as it does not have a front end. You can see the functionality of the code here in my Screencastify recording: 
+There is no visual for this application, as it does not have a front end. You can see the functionality of the code here in my Screencastify recording:
 
 ## Usage
 
@@ -22,6 +22,7 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete users and thoughts in my database
 WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+
 ## Technologies Used
 
 Node.js, Express.js, MongoDB, mongoose, Insomnia (tests), Github (store and edit code)
@@ -29,4 +30,3 @@ Node.js, Express.js, MongoDB, mongoose, Insomnia (tests), Github (store and edit
 ## License
 
 NA
-
