@@ -8,7 +8,7 @@ I created this Social Network API in order to create an interactive database whe
 
 This webpage is a backend program, that has not been deployed publicly. The code can be access in the following Github repository: https://github.com/gwenparadis/social-network-API
 
-There is no visual for this application, as it does not have a front end. You can see the functionality of the code here in my Screencastify recording:
+There is no visual for this application, as it does not have a front end. You can see the functionality of the code here in my Screencastify recording: https://drive.google.com/file/d/1A5XQExxvxs0AEubxZwZiboO2AdG1gcZV/view
 
 ## Usage
 
